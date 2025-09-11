@@ -242,6 +242,7 @@ body {
       .tag {
         margin-bottom: 20px; /* Add margin bottom for spacing */
         text-align: center; /* Align text to the center */
+        width: 420px;
       }
     
       .ul {
