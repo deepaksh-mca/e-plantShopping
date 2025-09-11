@@ -288,8 +288,8 @@ function ProductList({ onHomeClick }) {
 
                 </div>
                 <div style={styleObjUl}>
-                    <div> <a href="#" onClick={(e) => handlePlantsClick(e)} style={styleA}>Plants</a></div>
-                    <div> <a href="#" onClick={(e) => handleCartClick(e)} style={styleA}><h1 className='cart' style={{ position: 'relative', display: 'inline-block' }}>
+                    <div style={{width: '50%', marginLeft: '29%'}}> <a href="#" onClick={(e) => handlePlantsClick(e)} style={styleA}>Plants</a></div>
+                    <div style={{width: '50%', textAlign: 'right'}}> <a href="#" onClick={(e) => handleCartClick(e)} style={styleA}><h1 className='cart' style={{ position: 'relative', display: 'inline-block' }}>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" id="IconChangeColor" height="68" width="68">
                             <rect width="156" height="156" fill="none"></rect>
                             <circle cx="80" cy="216" r="12"></circle><circle cx="184" cy="216" r="12"></circle>

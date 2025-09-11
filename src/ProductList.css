@@ -139,8 +139,9 @@ body {
 .tag a{
     text-decoration: none;
 }
+
 .tag {
-    width: 400px;
+    width: 420px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -150,7 +151,7 @@ body {
     height: 70px;
     width: 70px;
     border-radius: 70%;
-    
+    margin-right: 18px;    
 }
 
 .luxury {
