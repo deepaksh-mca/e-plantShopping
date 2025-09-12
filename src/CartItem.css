@@ -84,6 +84,7 @@
     flex-direction: column; /* Change flex direction to stack items vertically */
     align-items: flex-start; /* Align items to the start of the container */
     width: 100%; /* Set width to full width */
+    text-align: center;
   }
 
   .cart-item-image {
@@ -99,6 +100,14 @@
 
   .cart-item-quantity {
     margin-top: 10px; /* Add margin top for spacing */
+    padding-left:34%;
+  }
+
+  .get-started-button {
+    margin-left:25px;
+  }
+  .get-started-button1 {
+    margin-left:25px;
   }
 }
 .cart-item {

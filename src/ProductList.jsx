@@ -235,7 +235,7 @@ function ProductList({ onHomeClick }) {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        width: '1100px',
+        width: '100%',
     }
     const styleA = {
         color: 'white',
@@ -326,17 +326,18 @@ function ProductList({ onHomeClick }) {
     <div className="product-list"> {/* Container for the list of plant cards */}
       {category.plants.map((plant, plantIndex) => ( // Loop through each plant in the current category
         <div className="product-card" key={plantIndex}> {/* Unique key for each plant card */}
+          <div className="product-title">{plant.name}</div> {/* Display plant name */}
           <img 
             className="product-image" 
             src={plant.image} // Display the plant image
             alt={plant.name} // Alt text for accessibility
           />
-          <div className="product-title">{plant.name}</div> {/* Display plant name */}
           {/* Display other plant details like description and cost */}
-          <div className="product-description">{plant.description}</div> {/* Display plant description */}
           <div className="product-cost product-price">{plant.cost}</div> {/* Display plant cost */}
+          <div className="product-description">{plant.description}</div> {/* Display plant description */}
+          
           {addedToCart[plant.name] ? (
-  <button className='product-button added-to-cart'>Added</button>
+  <button className='product-button added-to-cart' disabled>Added to Cart</button>
 )
            : (<button
             className="product-button"
